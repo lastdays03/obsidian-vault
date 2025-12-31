@@ -25,3 +25,7 @@ Source: [[Obsidian_Documentation_Mastery_Overview]]
 
 ---
 **Next**: [[05_MOC_and_Search]] 로 넘어가세요.
+
+## 💡 Key Insights
+*   **신경망 구조**: 아웃라이너와 태그를 활용한 유연한 계층 구조는, 인간의 사고가 신경망처럼 분기하고 연결되는 방식과 닮아 있어 경직된 폴더 구조보다 우월합니다.
+*   **이름의 중요성**: Tag Wrangler로 태그 이름을 다듬는 과정은 곧 내 머릿속의 '개념 지도'를 정교하게 다듬는 과정입니다.

@@ -18,3 +18,7 @@ Source: [[Obsidian_Documentation_Mastery_Overview]]
 
 ---
 **Next**: [[09_Dataview_Dashboards]] 로 넘어가세요.
+
+## 💡 Key Insights
+*   **일관성의 보증**: Templater나 Linter 같은 자동화 도구는 게으름을 위한 것이 아니라, 인간의 기억력으로는 유지하기 힘든 '일관성(Consistency)'을 기계적으로 보장하기 위함입니다.
+*   **시스템적 사고**: 반복 작업을 자동화하는 과정에서, "이 작업의 패턴은 무엇인가?"를 고민하게 되어 업무를 시스템적으로 바라보는 눈이 생깁니다.

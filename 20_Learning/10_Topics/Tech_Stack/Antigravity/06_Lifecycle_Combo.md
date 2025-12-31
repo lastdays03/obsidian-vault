@@ -33,3 +33,7 @@ graph LR
 1. `/project_kickoff` -> `Toy_Calculator` 생성.
 2. `/feature_planner` -> "덧셈 기능 구현" 계획 수립.
 3. `/archive_project` -> 프로젝트 종료 및 삭제.
+
+## 💡 Key Insights
+*   **순환 구조**: 프로젝트 생애주기는 직선이 아니라 순환 구조이며, 종료된 프로젝트의 산출물(Archive)은 다음 프로젝트를 위한 비옥한 거름(Knowledge)이 됩니다.
+*   **시작의 중요성**: Kickoff 단계에서 구조를 잘 잡아두면, 종료(Archive) 시점에 정리할 시간이 절반으로 줄어듭니다.

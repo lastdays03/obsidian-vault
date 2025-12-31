@@ -15,3 +15,7 @@ Source: [[Obsidian_Documentation_Mastery_Overview]]
 
 ---
 **Completion**: 모든 학습을 완료했습니다! 🎉 [[../Obsidian_Documentation_Mastery_Plan|플랜으로 돌아가서]] 최종 점검을 하세요.
+
+## 💡 Key Insights
+*   **양뇌 활용**: Excalidraw를 통한 시각적 사고는 텍스트(좌뇌)와는 다른 인지 모드(우뇌)를 활성화하여, 선형적인 글쓰기로는 포착할 수 없는 복잡한 관계를 풀어냅니다.
+*   **인터랙티브 맵**: 단순한 그림을 넘어 노트와 연결된 '살아있는 지도'를 그림으로써, 지식 탐색의 경험을 입체적으로 만듭니다.

@@ -29,3 +29,7 @@ Source: [[Obsidian_Documentation_Mastery_Overview]]
 
 ---
 **Next**: [[02_Essential_Plugins]] 로 넘어가세요.
+
+## 💡 Key Insights
+*   **몰입 유지**: 단축키 사용의 진짜 목적은 0.1초의 속도가 아니라, 키보드와 마우스를 오가는 인지적 마찰을 줄여 '몰입(Flow)'을 유지하는 데 있습니다.
+*   **기능의 접근성**: `Cmd + P` 팔레트는 수백 개의 기능을 외우지 않아도 즉시 접근하게 해주는 '만능 열쇠'입니다.

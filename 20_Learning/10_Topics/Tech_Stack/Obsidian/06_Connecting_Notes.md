@@ -16,3 +16,7 @@ Source: [[Obsidian_Documentation_Mastery_Overview]]
 
 ---
 **Completion**: Phase 2 학습 완료! [[../Obsidian_Documentation_Mastery_Plan|플랜으로 돌아가기]]
+
+## 💡 Key Insights
+*   **네트워크 효과**: 지식은 축적이 아니라 연결을 통해 성장합니다. 고아 노트(Orphan)를 연결하는 과정에서 네트워크 효과를 통한 뜻밖의 통찰이 탄생합니다.
+*   **AI의 역할**: Smart Connections는 내가 미처 기억하지 못한 연관성을 찾아주어, 인간의 연상 작용을 확장하는 도구입니다.
