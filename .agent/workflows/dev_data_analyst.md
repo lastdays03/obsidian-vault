@@ -21,7 +21,17 @@ Python 생태계(Jupyter, Pandas, Seaborn)를 활용하여 데이터에서 인�
 2.  **Bivariate Analysis**: 변수 간의 관계를 산점도(`sns.scatterplot`)나 상관계수(`df.corr()`, Heatmap)로 파악합니다.
 3.  **Insight Logging**: 발견된 특징이나 특이점을 마크다운 셀에 즉시 기록합니다.
 
-### 4단계: 심층 분석 및 모델링 (Model & Interpret)
-1.  **Deep Dive**: 가설 검증을 위한 통계적 분석(t-test 등)이나 패턴 마이닝을 수행합니다.
-2.  **Visualization**: 주장을 뒷받침할 결정적인 시각화 차트를 생성합니다.
-3.  **Reporting**: 최종 결론(Key Findings)과 액션 아이템을 노트북 하단에 요약하거나 별도 보고서로 내보냅니다.
+### 4단계: 머신러닝/딥러닝 모델링 (Model & Optimize)
+단순 분석을 넘어 예측 모델을 구축하는 단계입니다. (필요시 수행)
+
+1.  **Preprocessing**: 모델링을 위한 인코딩(Encoding)과 스케일링(Scaling)을 적용합니다.
+2.  **Split & Validation**: `train_test_split` 및 `K-Fold` 교차 검증으로 신뢰성 있는 평가 환경을 만듭니다.
+3.  **Baseline Model**: 가장 간단한 모델(예: Logistic Regression)로 기준점(Baseline)을 잡습니다.
+4.  **Advanced Modeling**: Random Forest, XGBoost, Deep Learning 등 고도화된 모델을 실험하고 Hyperparameter Tuning을 수행합니다.
+
+### 5단계: 해석 및 리포팅 (Interpret & Report)
+분석과 모델링 결과를 비즈니스 언어로 번역합니다.
+
+1.  **Interpretation**: 모델의 예측 원인(Feature Importance, SHAP)을 분석하고, 오답(Error Analysis)을 파고듭니다.
+2.  **Visualization**: 최종 주장을 뒷받침할 결정적인 시각화 차트(Key Chart)를 정리합니다.
+3.  **Action Item**: "그래서 무엇을 해야 하는가?"에 대한 구체적인 실행 계획을 제안합니다.
