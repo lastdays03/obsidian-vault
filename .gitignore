@@ -10,5 +10,5 @@
 # Obsidian - Cache & Trash
 .trash/
 
-# Agent (Include this in git)
-# .agent/
+# Antigravity Agent Settings (Symlink)
+.agent
