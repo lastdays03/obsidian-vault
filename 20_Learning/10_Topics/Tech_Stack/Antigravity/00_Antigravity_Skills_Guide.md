@@ -45,9 +45,12 @@ cd ~/dev/workspace/my_new_project
 ### 3. 학습 및 연구 (Learning & Research)
 새로운 기술 습득과 심층 이해를 돕습니다. (참고: [[09_Study_Planner_Workflow]])
 
-| 커맨드                 | 설명                                                                                          |
-| :--------------------- | :-------------------------------------------------------------------------------------------- |
-| **/dev_study_planner** | **[Learning]** 학습 계획 수립부터 "Break & Fix" 실습, 이론 요약까지 학습 과정을 가이드합니다. |
+| 커맨드                 | 설명                                                                                 |
+| :--------------------- | :----------------------------------------------------------------------------------- |
+| 커맨드                 | 설명                                                                                 |
+| :--------------------- | :----------------------------------------------------------------------------------- |
+| **/dev_study_planner** | **[Deep]** 파인만 기법과 Break & Fix를 활용하여 개념을 완벽하게 체득(Mastery)합니다. |
+| **/dev_trend_tracker** | **[Quick]** 최신 기술 트렌드나 도구를 빠르게 파악하고 3줄로 요약하여 아카이빙합니다. |
 
 ### 4. 데이터 분석 (Data Analysis)
 데이터로부터 인사이트를 도출합니다. (참고: [[11_Data_Analyst_Workflow]])
@@ -96,6 +99,33 @@ cd ~/dev/workspace/my_new_project
 
 ---
 
+## 🏗️ 아키텍처: 참조 분리 (Reference Separation Pattern)
+
+모든 워크플로우는 **"가벼운 실행 로직(Workflow)"**과 **"무거운 상세 표준(Reference)"**으로 분리되어 설계되었습니다.
+
+```text
+.agent/
+├── workflows/             # [How-to] 에이전트의 행동 순서 (Lightweight)
+│   └── dev_data_analyst.md
+└── references/            # [Standard] 품질 기준 및 템플릿 (Heavy)
+    └── dev_data_analyst/
+        ├── SKILL.md       # (O) 품질 표준, 철학, 체크리스트
+        └── template.md    # (O) 사용자가 편집하기 쉬운 마크다운 양식
+```
+
+### 이 패턴의 장점
+1.  **효율성**: 에이전트는 작업을 시작할 때만 필요한 Reference를 읽어 토큰을 절약합니다.
+2.  **유지보수**: 템플릿이나 기준을 수정할 때, 복잡한 워크플로우 로직을 건드릴 필요가 없습니다.
+3.  **표준화**: `SKILL.md`는 해당 도메인의 "Single Source of Truth" 역할을 합니다.
+
+### 커스텀 워크플로우 만들기
+나만의 스킬을 추가하려면 위 구조를 따르는 것을 권장합니다.
+
+1.  **Reference 생성**: `.agent/references/{skill_name}/SKILL.md`에 규칙 작성.
+2.  **Workflow 생성**: `.agent/workflows/{skill_name}.md`에서 `SKILL.md`를 로드하도록 지시.
+
+---
+
 ## 🔐 보안 가이드 (Security Guide)
 
 Antigravity 에이전트의 권한을 관리하기 위한 보안 설정은 `.agent/SECURITY.md`에 정의되어 있습니다.
@@ -103,6 +133,7 @@ Antigravity 에이전트의 권한을 관리하기 위한 보안 설정은 `.age
 *   **위치**: [[../../../../.agent/SECURITY|SECURITY.md]]
 *   **내용**: 3단계 보안 프로필(Strict, Balanced, Efficiency) 및 터미널 명령어 Allow/Deny List.
 *   **사용법**: 해당 문서를 참고하여 Antigravity 설정 화면(Settings > File Access / Terminal)에 값을 적용하세요.
+*   **팁**: 설정 입력이 번거로운 경우, **Prefix 매칭**을 활용한 간편 설정 가이드도 포함되어 있습니다.
 
 ## 📂 프로젝트 구조
 
@@ -133,7 +164,8 @@ claude_skills/
 
 ### 자동 동기화 (`scripts/watch_and_sync.sh`)
 
-워크플로우 파일 변경 시 자동으로 `sync_to_global.sh`를 실행합니다. 터미널 창 하나에 띄워두고 작업하면 편리합니다.
+워크플로우 파일 변경 시 자동으로 `sync_to_global.sh`를 실행합니다.
+**실행 즉시 동기화(Initial Sync)**를 수행하므로, 켜두기만 하면 항상 최신 상태가 보장됩니다.
 
 ```bash
 # 실행
