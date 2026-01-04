@@ -9,13 +9,15 @@
 *지식의 기초가 되는 원자적 단위들입니다. 다른 주제로 확장될 수 있는 불변의 지식입니다.*
 
 ### 💻 CS Concepts
-- [[Mutability|가변성 (Mutability)]]
-- [[Inheritance|상속 (Inheritance)]]
-- [[Polymorphism|다형성 (Polymorphism)]]
-- [[Dynamic_Typing|동적 타이핑 (Dynamic Typing)]]
+- **[[CS_Concepts_MOC|컴퓨터 과학 전체 보기]]**
+    - [[TDD|TDD]]
+    - [[Polymorphism|다형성]]
+    - [[Mutability|가변성]]
 
 ### 🌐 Domain Knowledge
-*(추후 추가: 비즈니스 도메인, 물리학 등)*
+- **[[Domain_MOC|도메인 지식 전체 보기]]**
+    - [[MOC|PKM (지식 관리)]]
+    - [[OSEMN|Data Science (데이터 과학)]]
 
 ---
 
@@ -23,9 +25,11 @@
 *현재 진행 중인 커리큘럼과 프로젝트화된 학습 경로입니다.*
 
 ### 🛠️ Tech Stack (기술 스택)
-- **[[Python_MOC|Python (파이썬)]]**: 언어의 기초부터 심화 라이브러리까지.
-- **[[Antigravity_MOC|Antigravity (안티그래비티)]]**: AI 코딩과 워크플로우 방법론.
-- **[[Obsidian_MOC|Obsidian (옵시디언)]]**: 지식 관리와 제2의 뇌 활용법.
+- **[[Tech_Stack_MOC|기술 스택 전체 보기]]**
+    - [[Python_MOC|Python (파이썬)]]
+    - [[Antigravity_MOC|Antigravity (안티그래비티)]]
+    - [[Obsidian_MOC|Obsidian (옵시디언)]]
+    - [[Database_MOC|Database (데이터베이스)]]
 
 ---
 
