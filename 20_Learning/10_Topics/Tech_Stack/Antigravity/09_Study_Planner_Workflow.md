@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 09. Study Planner Workflow
 
 **Goal**: "코드를 고장내며 배우는" 실전형 학습 워크플로우인 **/dev_study_planner**를 이해하고 활용합니다.

@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, tool/obsidian]
+Up: [[Obsidian_MOC]]
+---
+
 Source: [[Obsidian_Documentation_Mastery_Overview]]
 # 02. Essential Plugins (필수 플러그인)
 

@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 04. Feature Planner Deep Dive
 
 **Goal**: 고급 기능 구현을 위한 계획 수립 도구인 Feature Planner를 마스터합니다.

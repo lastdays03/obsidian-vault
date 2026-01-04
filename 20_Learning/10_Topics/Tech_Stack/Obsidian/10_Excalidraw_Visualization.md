@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, tool/obsidian]
+Up: [[Obsidian_MOC]]
+---
+
 Source: [[Obsidian_Documentation_Mastery_Overview]]
 # 10. Excalidraw Visualization (시각화)
 

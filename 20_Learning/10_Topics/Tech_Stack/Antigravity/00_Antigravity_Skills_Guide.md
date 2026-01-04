@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # Antigravity Skills (Development & Workflow Guide)
 
 이 문서는 **Google Antigravity** 환경에서 AI 에이전트와 함께 효율적으로 협업하기 위한 **Workflows(Skill)** 및 **설정 표준**을 정의하는 마스터 가이드입니다. [[03_Claude_Skills_Methodology|Claude Skills 방법론]]을 Antigravity에 맞게 최적화하였습니다.

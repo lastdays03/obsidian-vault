@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, tool/obsidian]
+Up: [[Obsidian_MOC]]
+---
+
 Source: [[Obsidian_Documentation_Mastery_Overview]]
 # 08. Automation (자동화)
 

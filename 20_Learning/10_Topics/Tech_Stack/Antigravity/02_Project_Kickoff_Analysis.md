@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 02. Project Kickoff Analysis
 
 **Goal**: `/project_kickoff` 워크플로우가 **표준화된 프로젝트**를 어떻게 보장하는지 분석합니다.

@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 08. Maintenance Combo (구조 유지보수)
 
 **Goal**: 지식 베이스가 커질수록 무너지기 쉬운 구조를 `[[MOC]]`와 `Review`로 단단하게 유지합니다.

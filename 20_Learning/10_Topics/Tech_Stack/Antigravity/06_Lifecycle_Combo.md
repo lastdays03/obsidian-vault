@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 06. Lifecycle Combo (프로젝트 생애주기)
 
 **Goal**: 프로젝트의 시작부터 끝까지를 책임지는 3가지 워크플로우(`Kickoff`, `Planner`, `Archive`)의 연결 흐름을 익힙니다.

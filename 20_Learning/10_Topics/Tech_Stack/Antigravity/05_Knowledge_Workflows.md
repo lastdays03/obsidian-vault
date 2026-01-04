@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 05. Knowledge Workflows ([[Knowledge_Pipeline]])
 
 **Goal**: 정보(Data)를 지식(Knowledge)으로 변환하는 3가지 워크플로우의 차이점과 역할을 이해합니다.

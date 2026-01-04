@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 11. Data Analyst Workflow
 
 **Goal**: 데이터에서 인사이트를 추출하는 "탐색적 데이터 분석(EDA)" 과정을 체계화한 **/dev_data_analyst** 워크플로우를 이해합니다.

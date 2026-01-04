@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 03. Claude Skills Methodology
 
 **Goal**: 복잡한 코딩 작업을 **"Skill"** 단위로 쪼개서 수행하는 **[[Agentic_Coding|Agentic Coding]]** 방법론을 이해합니다.

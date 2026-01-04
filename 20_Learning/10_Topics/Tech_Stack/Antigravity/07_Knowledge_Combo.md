@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 07. Knowledge Combo (지식 선순환)
 
 **Goal**: 임시 메모가 영구적인 지식이 되는 과정(`Review`, `Harvester`, `Distiller`)을 체화합니다.

@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 10. Utilities & Tools
 
 **Goal**: 프로젝트 간 일관된 환경 구성을 도와주는 유틸리티 도구를 이해합니다.

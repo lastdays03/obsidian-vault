@@ -1,3 +1,8 @@
+---
+tags: [knowledge/topic, methodology/antigravity]
+Up: [[Antigravity_MOC]]
+---
+
 # 01. Workflow Structure (.agent/workflows)
 
 **Goal**: [[Agentic_Workflow|안티그래비티 에이전트]]가 "어떻게 일하는지" 정의하는 [[Antigravity_Workflow]] 파일의 구조를 이해합니다.
