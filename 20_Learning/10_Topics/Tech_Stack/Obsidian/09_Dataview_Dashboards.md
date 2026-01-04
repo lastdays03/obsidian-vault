@@ -3,7 +3,7 @@ tags: [knowledge/topic, tool/obsidian]
 Up: [[Obsidian_MOC]]
 ---
 
-Source: [[Obsidian_Documentation_Mastery_Overview]]
+Source: [[Obsidian_MOC]]
 # 09. [[Dataview]] Dashboards (데이터뷰)
 
 **Goal**: 내 볼트의 데이터를 쿼리하여 동적인 대시보드 만들기.

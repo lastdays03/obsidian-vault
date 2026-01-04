@@ -7,8 +7,8 @@
 
 ## 🔑 핵심 개념 (Key Concepts)
 - [[MOC|MOC (Map of Content)]]
-- [[Zettelkasten|제텔카스텐 (Zettelkasten)]]
-- [[Graph_View|지식 그래프 (Knowledge Graph)]]
+- 제텔카스텐 (Zettelkasten)
+- 지식 그래프 (Knowledge Graph)
 
 ---
 

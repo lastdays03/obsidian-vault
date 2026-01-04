@@ -3,7 +3,7 @@ tags: [knowledge/topic, tool/obsidian]
 Up: [[Obsidian_MOC]]
 ---
 
-Source: [[Obsidian_Documentation_Mastery_Overview]]
+Source: [[Obsidian_MOC]]
 # 08. Automation (자동화)
 
 **Goal**: 반복적인 작업을 자동화하여 시간을 절약하기.

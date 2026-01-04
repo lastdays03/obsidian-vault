@@ -3,7 +3,7 @@ tags: [knowledge/topic, tool/obsidian]
 Up: [[Obsidian_MOC]]
 ---
 
-Source: [[Obsidian_Documentation_Mastery_Overview]]
+Source: [[Obsidian_MOC]]
 # 04. Organization Tools (구조화 도구)
 
 **Goal**: 폴더 정리의 한계를 넘어, 태그와 아웃라이너로 유연한 구조 만들기.

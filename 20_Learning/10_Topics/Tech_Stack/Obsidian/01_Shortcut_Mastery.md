@@ -3,7 +3,7 @@ tags: [knowledge/topic, tool/obsidian]
 Up: [[Obsidian_MOC]]
 ---
 
-Source: [[Obsidian_Documentation_Mastery_Overview]]
+Source: [[Obsidian_MOC]]
 # 01. Shortcut Mastery (단축키 마스터)
 
 **Goal**: 마우스 없이 옵시디언을 자유자재로 다루기.
@@ -19,7 +19,7 @@ Source: [[Obsidian_Documentation_Mastery_Overview]]
 파일 탐색기에서 마우스로 클릭하는 것보다 훨씬 빠릅니다.
 - **실습**:
     1. `Cmd + O`를 누릅니다.
-    2. `Overview`를 검색해서 프로젝트 오버뷰 파일로 이동해 보세요.
+    2. `FileName` 입력 후 엔터.
 
 ## 3. 링크 생성 (`[[`)
 지식 연결의 핵심입니다.

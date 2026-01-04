@@ -3,7 +3,7 @@ tags: [knowledge/topic, tool/obsidian]
 Up: [[Obsidian_MOC]]
 ---
 
-Source: [[Obsidian_Documentation_Mastery_Overview]]
+Source: [[Obsidian_MOC]]
 # 03. Antigravity Basic (AI 활용 기초)
 
 **Goal**: AI 에이전트를 나만의 비서로 활용하기.
@@ -44,7 +44,7 @@ sequenceDiagram
 > "지금 보고 있는 @[03_Antigravity_Basic] 파일을 요약해줘."
 
 ---
-**Completion**: Phase 1 학습을 완료했습니다! [[../Obsidian_Documentation_Mastery_Plan|플랜으로 돌아가기]]
+**Completion**: Phase 1 학습을 완료했습니다! [[Obsidian_MOC|플랜으로 돌아가기]]
 
 ## 💡 Key Insights
 *   **맥락의 힘**: `@[Context]` 문법은 LLM을 단순한 챗봇에서 사용자의 지식 베이스에 뿌리를 둔 '맥락을 이해하는 파트너'로 진화시킵니다.

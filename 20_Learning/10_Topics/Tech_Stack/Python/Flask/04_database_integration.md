@@ -5,7 +5,7 @@ Up: [[Flask_MOC]]
 
 # 4. Database Integration (데이터베이스 통합)
 
-Flask는 특정 데이터베이스를 강제하지 않지만, 파이썬 생태계에서 가장 널리 쓰이는 `SQLAlchemy` ORM(Object Relational Mapping)을 플라스크에 맞게 래핑한 **Flask-SQLAlchemy**를 주로 사용합니다. 또한, 데이터베이스 스키마 변경 사항을 관리하기 위해 **Flask-Migrate** (Alembic 기반)를 함께 사용합니다.
+Flask는 특정 데이터베이스를 강제하지 않지만, 파이썬 생태계에서 가장 널리 쓰이는 `SQLAlchemy` **ORM (Object Relational Mapping)**은 SQL 대신 파이썬 객체로 데이터베이스를 다루는 기술입니다. Flask에서는 주로 SQLAlchemy를 사용합니다. 또한, 데이터베이스 스키마 변경 사항을 관리하기 위해 **Flask-Migrate** (Alembic 기반)를 함께 사용합니다.
 
 ---
 
@@ -207,6 +207,6 @@ db.session.commit()
 
 ---
 ## 💡 Key Insights
-- **Why ORM?**: SQL을 직접 쓰지 않고 객체(Class)로 DB를 다루는 [[SQLAlchemy]]는 생산성을 높이고 DB 종류(SQLite -> PostgreSQL 등) 변경을 자유롭게 합니다.
+- **Why ORM?**: SQL을 직접 쓰지 않고 객체(Class)로 DB를 다루는 **SQLAlchemy**는 생산성을 높이고 DB 종류(SQLite -> PostgreSQL 등) 변경을 자유롭게 합니다.
 - **Migration is Must**: 개발 중 스키마 변경은 필연적입니다. 초기부터 `Flask-Migrate`를 도입하여 DB 버전 관리를 시작하세요.
 - **N+1 Problem**: ORM의 편리함 뒤에 숨은 성능 저하(Lazy Loading)를 조심해야 합니다. 쿼리가 너무 많이 나간다면 로딩 전략을 점검하세요.

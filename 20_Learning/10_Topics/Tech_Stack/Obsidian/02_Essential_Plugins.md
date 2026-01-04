@@ -3,7 +3,7 @@ tags: [knowledge/topic, tool/obsidian]
 Up: [[Obsidian_MOC]]
 ---
 
-Source: [[Obsidian_Documentation_Mastery_Overview]]
+Source: [[Obsidian_MOC]]
 # 02. Essential Plugins (필수 플러그인)
 
 **Goal**: 생산성을 높여주는 필수 플러그인 3대장 활용법.

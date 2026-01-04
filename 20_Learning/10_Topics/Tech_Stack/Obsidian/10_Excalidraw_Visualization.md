@@ -3,7 +3,7 @@ tags: [knowledge/topic, tool/obsidian]
 Up: [[Obsidian_MOC]]
 ---
 
-Source: [[Obsidian_Documentation_Mastery_Overview]]
+Source: [[Obsidian_MOC]]
 # 10. Excalidraw Visualization (시각화)
 
 **Goal**: 텍스트로는 표현하기 힘든 아이디어를 그림으로 그리기.
@@ -15,11 +15,11 @@ Source: [[Obsidian_Documentation_Mastery_Overview]]
 
 ## 2. 임베드 (Embed)
 그진 그림을 다른 노트에 삽입할 수 있습니다.
-- **문법**: `![[MyDrawing.excalidraw]]`
-- **팁**: 그림 안에 `[[WikiLink]]`를 넣으면, 그림을 클릭했을 때 해당 노트로 이동합니다 (인터랙티브 다이어그램).
+- **임베드**: `![[MyDrawing.excalidraw]]` 처럼 노트 안에 그림을 삽입할 수 있습니다.
+- **양방향 링크**: 그림 속의 텍스트에 `[[WikiLink]]`를 걸면 노트와 연결됩니다.
 
 ---
-**Completion**: 모든 학습을 완료했습니다! 🎉 [[../Obsidian_Documentation_Mastery_Plan|플랜으로 돌아가서]] 최종 점검을 하세요.
+**Completion**Next Activity**: [[Obsidian_MOC]] 로 이동하여 플랜을 확인하세요.
 
 ## 💡 Key Insights
 *   **양뇌 활용**: Excalidraw를 통한 시각적 사고는 텍스트(좌뇌)와는 다른 인지 모드(우뇌)를 활성화하여, 선형적인 글쓰기로는 포착할 수 없는 복잡한 관계를 풀어냅니다.

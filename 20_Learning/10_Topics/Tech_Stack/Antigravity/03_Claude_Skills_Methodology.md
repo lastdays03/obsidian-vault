@@ -6,7 +6,7 @@ Up: [[Antigravity_MOC]]
 # 03. Claude Skills Methodology
 
 **Goal**: 복잡한 코딩 작업을 **"Skill"** 단위로 쪼개서 수행하는 **[[Agentic_Coding|Agentic Coding]]** 방법론을 이해합니다.
-**Reference**: [[../resources/SKILL|SKILL.md]]
+**Reference**: `.agent/references/obsi-knowledge-refiner/SKILL.md`
 
 ## 1. What is a Skill?
 - **정의**: 에이전트가 완수할 수 있는 잘 정의된(Well-defined) 작업 단위.

@@ -7,7 +7,7 @@
 
 ## 🔑 핵심 개념 (Key Concepts)
 - [[Agentic_Workflow|에이전틱 워크플로우 (Agentic Workflow)]]
-- [[Prompt_Engineering|프롬프트 엔지니어링 (Prompt Engineering)]]
+- 프롬프트 엔지니어링 (Prompt Engineering)
 
 ---
 

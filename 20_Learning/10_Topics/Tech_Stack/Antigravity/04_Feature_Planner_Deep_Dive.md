@@ -6,7 +6,7 @@ Up: [[Antigravity_MOC]]
 # 04. Feature Planner Deep Dive
 
 **Goal**: 고급 기능 구현을 위한 계획 수립 도구인 Feature Planner를 마스터합니다.
-**Reference**: [[../resources/plan-template|plan-template.md]]
+**Reference**: `.agent/references/dev-feature-planner/plan-template.md`
 
 ## 1. Feature Planner란?
 단순히 "구현해"라고 하는 대신, **"어떻게, 왜, 안전하게"** 구현할지 미리 설계하는 워크플로우입니다.

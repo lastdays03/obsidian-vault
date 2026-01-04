@@ -21,12 +21,12 @@ MOC는 보통 상단에 **핵심 개념 (Key Concepts)**, 하단에 **주제별 
 # Artificial Intelligence MOC
 
 ## Key Concepts
-- [[Machine Learning]]
-- [[Deep Learning]]
+- Machine Learning
+- Deep Learning
 
 ## Models
-- [[LLM]]
-- [[Diffusion Models]]
+- LLM
+- Diffusion Models
 ```
 
 ## 💡 Key Insights

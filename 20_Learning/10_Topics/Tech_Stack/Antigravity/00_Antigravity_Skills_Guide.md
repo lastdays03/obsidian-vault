@@ -135,7 +135,7 @@ cd ~/dev/workspace/my_new_project
 
 Antigravity 에이전트의 권한을 관리하기 위한 보안 설정은 `.agent/SECURITY.md`에 정의되어 있습니다.
 
-*   **위치**: [[../../../../.agent/SECURITY|SECURITY.md]]
+*   **Reference**: `.agent/SECURITY`
 *   **내용**: 3단계 보안 프로필(Strict, Balanced, Efficiency) 및 터미널 명령어 Allow/Deny List.
 *   **사용법**: 해당 문서를 참고하여 Antigravity 설정 화면(Settings > File Access / Terminal)에 값을 적용하세요.
 *   **팁**: 설정 입력이 번거로운 경우, **Prefix 매칭**을 활용한 간편 설정 가이드도 포함되어 있습니다.

@@ -12,4 +12,4 @@
 
 ## Tip
 문서를 작성할 때 "이 지식이 어디에 쓰였는지"를 꼭 연결해두세요.
-Example: `Related Project: [[Obsidian_Setup]]`
+Example: `Related Project: [[Obsidian_MOC]]`

@@ -3,7 +3,7 @@ tags: [knowledge/topic, tool/obsidian]
 Up: [[Obsidian_MOC]]
 ---
 
-Source: [[Obsidian_Documentation_Mastery_Overview]]
+Source: [[Obsidian_MOC]]
 # 07. Task Management (할 일 관리)
 
 **Goal**: 옵시디언을 강력한 할 일 관리 시스템으로 변신시키기.

@@ -1,11 +1,12 @@
 ---
 tags:
   - knowledge/topic
-Source: [[99_Inbox]]
+Source: [[Python_MOC]]
 ---
+
 # macOS Python 설치 및 환경 구성 가이드
 
-이번 디버깅에서 확인된 것처럼, **macOS 기본 제공 Python(System Python)**은 버전이 낮거나(3.9.6 등), OpenSSL 등 주요 라이브러리가 오래된 버전(LibreSSL)과 연결되어 있어 호환성 문제가 자주 발생합니다.
+**Inbox**: `99_Inbox` 폴더에 설치 로그를 기록합니다.이번 디버깅에서 확인된 것처럼, **macOS 기본 제공 Python(System Python)**은 버전이 낮거나(3.9.6 등), OpenSSL 등 주요 라이브러리가 오래된 버전(LibreSSL)과 연결되어 있어 호환성 문제가 자주 발생합니다.
 
 따라서 개발용으로는 **Homebrew**와 **Pyenv**를 사용하여 최신 안정 버전을 별도로 설치해 사용하는 것이 표준(Best Practice)입니다.
 
