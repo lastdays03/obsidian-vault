@@ -38,6 +38,11 @@
 - **시각화**: [[03. python_matplotlib|Matplotlib]], [[04. python_seaborn_folium|Seaborn & Folium]]
 - **수집**: [[05. python_crawling|웹 크롤링]]
 
+### 3. 웹 프레임워크 (Web Frameworks)
+*웹 애플리케이션 개발을 위한 도구입니다.*
+
+- [[Flask_MOC|Flask (플라스크)]]
+
 ---
 
 ## 🧠 연결 그래프 (Graph View)
