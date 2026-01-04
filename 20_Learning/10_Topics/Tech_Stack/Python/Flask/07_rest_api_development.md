@@ -15,20 +15,25 @@ Flask는 가볍고 유연하여 RESTful API 서버를 구축하는 데 매우 �
 
 ## 2. JSON 응답 (Data Handling)
 
-Flask의 `jsonify` 함수를 사용하여 파이썬 딕셔너리를 JSON 응답으로 변환합니다.
+### Standardized Response (표준 응답 포맷)
+`sample_flask`에서는 API의 일관성을 위해 유틸리티 함수(helper)를 사용하여 응답을 표준화합니다.
 
+**`app/utils.py` 예시**:
 ```python
-from flask import Flask, jsonify, request
+from flask import jsonify
 
-app = Flask(__name__)
-
-@app.route('/api/hello')
-def api_hello():
-    data = {
-        'message': 'Hello API',
-        'status': 'success'
+def api_response(status, message, data=None, error=None):
+    """표준화된 API 응답 포맷을 반환합니다."""
+    response = {
+        "status": status,  # "success" or "error"
+        "message": message,
+        "data": data,
+        "error": error
     }
-    return jsonify(data) # Content-Type: application/json 설정됨
+    return jsonify(response)
+
+# 사용 예시
+# return api_response("success", "Data retrieved", data={"count": 5})
 ```
 
 ## 3. 간단한 REST API 구현 예제

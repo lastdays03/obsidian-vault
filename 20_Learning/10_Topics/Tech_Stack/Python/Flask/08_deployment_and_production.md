@@ -7,7 +7,28 @@ Up: [[Flask_MOC]]
 
 개발 모드(`flask run --debug`)로 실행하던 애플리케이션을 실제 사용자에게 서비스하기 위해서는 프로덕션 환경에 맞는 배포 설정이 필요합니다.
 
-## 1. WSGI 서버 (Gunicorn)
+## 1. Development Workflow (개발 워크플로우)
+배포 전, 코드 품질과 안정성을 보장하기 위해 자동화된 명령어를 사용하는 것이 좋습니다. `sample_flask`에서는 `Makefile`을 통해 이를 표준화합니다.
+
+```makefile
+# Makefile 예시
+test:
+    pytest
+
+lint:
+    flake8 app/
+
+format:
+    black app/
+```
+
+- **`make test`**: 전체 테스트 슈트를 실행하여 기능 회귀를 방지합니다.
+- **`make lint`**: 코드 스타일(`flake8`)을 검사하여 잠재적 오류를 찾습니다.
+- **`make format`**: 코드 포맷팅(`black`)을 자동화하여 일관된 스타일을 유지합니다.
+
+---
+
+## 2. WSGI 서버 (Gunicorn)
 
 Flask 내장 서버는 개발용이므로, 보안과 성능을 위해 프로덕션용 WSGI(Web Server Gateway Interface) 서버를 사용해야 합니다. 리눅스/맥 환경에서는 **Gunicorn**이 표준입니다.
 

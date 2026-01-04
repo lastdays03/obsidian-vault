@@ -7,6 +7,7 @@
 
 ## 🔑 핵심 개념 (Key Concepts)
 *플라스크 개발을 위한 주요 구성 요소들입니다.*
+> **Reference**: 실습 예제 코드는 [sample_flask](https://github.com/lastdays03/sample_flask) 리포지토리를 참조하세요.
 
 - [[01_environment_setup|환경 설정 (Environment)]]
 - [[02_flask_fundamentals|플라스크 기초 (Fundamentals)]]

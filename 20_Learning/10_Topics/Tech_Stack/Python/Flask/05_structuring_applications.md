@@ -38,27 +38,67 @@ project_root/
 
 프로젝트가 커지거나, 여러 개발자가 협업하거나, 기능을 모듈 단위로 분리해야 할 때 사용하는 구조입니다. 핵심은 **애플리케이션 팩토리(Application Factory)** 패턴과 **블루프린트(Blueprint)**의 활용입니다. 이러한 구조는 기능별로 독립성을 높여주어 마이크로서비스 아키텍처로 전환하기에도 유리합니다.
 
+### 🏗️ 컴포넌트 다이어그램 (Architectural Overview)
+
+`sample_flask`는 **Application Factory**와 **Blueprint**를 사용하여 유기적으로 연결된 구조를 가집니다.
+
+```mermaid
+graph TD
+    Client[Client Browser] -->|Requests| App[Flask App]
+    
+    subgraph Blueprints
+        App --> AuthBP[Auth Blueprint]
+        App --> MainBP[Main Blueprint]
+        App --> ErrorsBP[Errors Blueprint]
+    end
+    
+    AuthBP -->|/auth/login, /auth/register| AuthViews[views.py]
+    AuthViews --> User[User Model]
+    
+    MainBP -->|/district, /building| MainViews[__init__.py]
+    MainViews --> MockData[mock_data.py]
+    
+    User --> DB[(SQLite/PostgreSQL)]
+```
+
+### 🔄 데이터 흐름 (Data Flow)
+시스템을 통과하는 데이터의 처리 과정은 다음과 같습니다.
+
+1.  **Request Ingestion**: Flask 앱이 요청을 수신하고 URL 규칙에 따라 적절한 Blueprint(`Auth` or `Main`)로 라우팅합니다.
+2.  **Form Validation**: 사용자 입력이 있는 경우 `forms.py`(Flask-WTF) 클래스를 통해 데이터 유효성을 검증합니다.
+3.  **Business Logic**:
+    - **Auth**: `User` 모델을 통해 DB에서 사용자 정보를 조회하거나 생성합니다.
+    - **Main**: 비즈니스 로직을 처리하고 필요한 데이터를 조회합니다.
+4.  **Response Generation**:
+    - **HTML**: Jinja2 템플릿을 렌더링하여 반환합니다 (SSR).
+    - **JSON**: `app/utils.py`의 헬퍼 함수를 통해 표준 포맷의 JSON을 반환합니다 (CSR/API).
+
 ### 📂 디렉토리 구조 상세
+
+```
 ```
 project_root/
 ├── .flaskenv               # 환경 변수 (FLASK_APP, FLASK_DEBUG 등 자동 로드)
 ├── .gitignore              # Git 제외 파일 목록
 ├── config.py               # [중요] 환경별 설정 (Development, Production, Testing) 분리
 ├── requirements.txt
+├── Makefile                # [New] 개발 워크플로우 자동화 (test, lint, run)
+├── migrations/             # DB 마이그레이션 스크립트 (Alembic)
+├── docs/                   # 프로젝트 문서 (Architecture, API Reference)
 ├── run.py                  # [중요] 앱 실행 스크립트 (진입점)
-├── myapp/                  # 메인 애플리케이션 패키지 (폴더명은 프로젝트명으로 변경 가능)
+├── app/                    # [변경] 메인 애플리케이션 패키지 (sample_flask 구조)
 │   ├── __init__.py         # [중요] Application Factory (create_app) 정의 및 초기화
 │   ├── models.py           # 데이터베이스 모델 정의 (SQLAlchemy)
+│   ├── utils.py            # [New] 공통 유틸리티 (API 응답 포맷터 등)
 │   ├── templates/          # 전역 공통 템플릿 파일
 │   ├── static/             # 전역 공통 정적 파일
-│   ├── api/                # [Blueprint] API 관련 기능 모듈
-│   │   ├── __init__.py     # Blueprint 객체 생성
-│   │   ├── routes.py       # API 엔드포인트 라우팅
-│   │   └── schemas.py      # 데이터 검증 및 직렬화 스키마
+│   ├── main/               # [Blueprint] 메인 기능 및 데이터 API
+│   │   ├── __init__.py     # Blueprint 생성 및 라우트
+│   │   └── mock_data.py    # 시연용 더미 데이터
 │   └── auth/               # [Blueprint] 인증 관련 기능 모듈
 │       ├── __init__.py
-│       ├── routes.py       # 로그인/회원가입 라우팅
-│       └── services.py     # 인증 관련 비즈니스 로직
+│       ├── views.py        # [변경] 라우트 핸들러 (routes.py -> views.py)
+│       └── forms.py        # [New] WTForms 정의
 └── tests/                  # 테스트 코드 패키지
     ├── conftest.py         # Pytest 설정 및 공통 Fixture (app, client, db 등)
     ├── test_auth.py
