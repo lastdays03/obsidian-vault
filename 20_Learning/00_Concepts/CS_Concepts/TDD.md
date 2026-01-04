@@ -1,6 +1,10 @@
+---
+tags: [knowledge/concept, topic/CS, topic/Methodology]
+Up: [[Learning_MOC]]
+---
+
 # 개념 (Concept): TDD (Test Driven Development)
 
-**태그**: #knowledge/concept #topic/CS #topic/Methodology
 **출처**: [[04_Feature_Planner_Deep_Dive]]
 
 ---

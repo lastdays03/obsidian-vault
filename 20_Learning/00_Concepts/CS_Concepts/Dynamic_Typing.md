@@ -1,6 +1,10 @@
+---
+tags: [knowledge/concept, topic/CS, topic/Python]
+Up: [[Learning_MOC]]
+---
+
 # 개념 (Concept): 동적 타이핑 (Dynamic Typing)
 
-**태그**: #knowledge/concept #topic/CS #topic/Python
 **출처**: [[01. python_variables_datatypes]]
 
 ---

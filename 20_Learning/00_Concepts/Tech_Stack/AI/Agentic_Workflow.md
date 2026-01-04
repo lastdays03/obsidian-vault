@@ -1,17 +1,26 @@
-# Agentic Workflow
-**Aliases**: [[에이전트 워크플로우]]
-**Tags**: #concept/AI #dev/agent
-**Source**: [[20_Learning/10_Topics/Tech_Stack/Antigravity/01_Workflow_Structure]]
+---
+tags: [knowledge/concept, topic/AI]
+Up: [[Antigravity_MOC]]
+---
 
-## Definition
-단순한 프롬프트 응답(One-shot)을 넘어, AI 에이전트가 복잡한 작업을 수행하기 위해 따르는 구조화된 단계(Step-by-step)와 도구 사용의 절차.
+# 개념 (Concept): Agentic Workflow
 
-## Characteristics
-1.  **Iterative**: 한 번에 끝내지 않고 생각(Thought)과 행동(Action)을 반복한다.
-2.  **Tool Use**: 쉘 명령어, 파일 조작 등 외부 도구를 사용하여 환경과 상호작용한다.
-3.  **Human-in-the-loop**: 중요한 결정 지점에서는 인간의 피드백을 수용한다.
+**출처**: [[01_Workflow_Structure]]
 
-## Examples
-- **Planning**: 복잡한 요구사항을 작은 단위의 계획으로 분해.
-- **Review**: 코드나 문서를 비평하고 개선안 제안.
-- **Migration**: 대량의 파일 이동 및 링크 수정 자동화.
+---
+
+## 📖 정의 (Definition)
+**에이전트 워크플로우(Agentic Workflow)**는 AI 모델에게 단순히 질문하고 답을 얻는 것(Zero-shot)을 넘어, 복잡한 문제를 해결하기 위해 **도구 사용(Tool Use)**, **계획 수립(Planning)**, **반복적 검증(Iteration)** 과정을 거치도록 설계된 시스템입니다.
+
+---
+
+## 💡 예시 (Example)
+앤드류 응(Andrew Ng) 교수가 강조한 4가지 디자인 패턴이 대표적입니다.
+1.  **Reflection (성찰)**: 자신의 결과를 스스로 비평하고 개선.
+2.  **Tool Use (도구 사용)**: 웹 검색, 코드 실행 등 외부 도구 활용.
+3.  **Planning (계획)**: 목표를 달성하기 위한 단계별 계획 수립.
+4.  **Multi-agent Collaboration (협업)**: 여러 전문 에이전트가 역할을 나누어 작업.
+
+## 💡 Key Insights
+- **From Chatbot to Agent**: 단순한 대화형 챗봇에서, 실제로 일을 수행하고 환경을 변화시키는 '행동하는 주체'로의 진화를 의미합니다.
+- **신뢰성 향상**: 한 번에 정답을 맞추려 하기보다, 코드를 실행해보고 에러를 고치는 식의 반복 과정을 통해 결과물의 품질과 신뢰성을 비약적으로 높일 수 있습니다.

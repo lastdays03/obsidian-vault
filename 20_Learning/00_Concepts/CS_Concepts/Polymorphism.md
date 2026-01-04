@@ -1,6 +1,10 @@
+---
+tags: [knowledge/concept, topic/CS, topic/OOP]
+Up: [[Learning_MOC]]
+---
+
 # 개념 (Concept): 다형성 (Polymorphism)
 
-**태그**: #knowledge/concept #topic/CS #topic/OOP
 **출처**: [[07. python_classes]]
 
 ---

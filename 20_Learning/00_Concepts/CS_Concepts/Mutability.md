@@ -1,6 +1,10 @@
+---
+tags: [knowledge/concept, topic/CS, topic/Python]
+Up: [[Learning_MOC]]
+---
+
 # 개념 (Concept): 가변성 (Mutability)
 
-**태그**: #knowledge/concept #topic/CS #topic/Python
 **출처**: [[01. python_variables_datatypes]]
 
 ---
