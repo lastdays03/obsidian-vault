@@ -12,3 +12,6 @@
 
 # Antigravity Agent Settings (Symlink)
 .agent
+
+# Temporary Files
+_Temp
