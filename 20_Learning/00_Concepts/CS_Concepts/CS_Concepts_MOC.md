@@ -16,5 +16,12 @@ Up: [[Learning_MOC]]
 - [[Inheritance|상속 (Inheritance)]]
 - [[Polymorphism|다형성 (Polymorphism)]]
 
+## ♾️ DevOps & Automation
+- [[Human-in-the-loop|HITL (Human-in-the-loop)]]
+- [[DevContainers|DevContainers]]
+
+## 🖥️ UI/UX Paradigms
+- [[React-in-Terminal|React-in-Terminal (CLI UI)]]
+
 ## 💡 Key Insights
 - **Principles over Syntax**: 특정 언어의 문법보다 그 이면에 깔린 원리(예: 메모리 모델, 타입 시스템)를 이해하는 것이 장기적으로 훨씬 유리합니다.

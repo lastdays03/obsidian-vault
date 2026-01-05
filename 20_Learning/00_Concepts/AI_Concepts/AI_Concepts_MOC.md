@@ -41,6 +41,14 @@
 - [[RAG|RAG (검색 증강 생성)]]
 - [[Transfer_Learning|Transfer Learning (전이 학습)]]
 
+## 🤖 Agentic AI (에이전트 기술)
+*자율적으로 추론하고 행동하는 에이전트 관련 기술입니다.*
+
+- [[Thinking_Mode|Thinking Mode (Chain of Thought)]]
+- [[Model_Context_Protocol|MCP (Model Context Protocol)]]
+- [[Agentic_TDD|Agentic TDD]]
+- [[Docs-to-Skill|Docs-to-Skill Pipeline]]
+
 ## ⚙️ Preprocessing (전처리)
 *데이터를 학습에 맞게 가공하는 기술입니다.*
 
