@@ -12,4 +12,5 @@ Up: [[Tech_Stack_MOC]]
 
 ## 🗂️ Clusters
 - [[11_AI_Team_Operation_Guide|AI Team Operation Guide]]: AI 직원(페르소나) 정의 및 협업 워크플로우 가이드.
+- [[12_Antigravity_Multi_Agent_Strategy|Antigravity Multi-Agent Strategy]]: Claude와 Gemini를 Antigravity 환경에서 비용 효율적으로 운영하는 전략.
 

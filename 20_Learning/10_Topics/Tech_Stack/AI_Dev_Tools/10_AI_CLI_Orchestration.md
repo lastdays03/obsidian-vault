@@ -161,7 +161,10 @@ Source: AI CLI 오케스트레이션(Orchestration)
 
 "오케스트레이션"이라고 해서 거창한 시스템을 구축할 필요는 없습니다. 가장 먼저 **`llm` CLI** 도구를 설치해서 터미널에서 **Gemini로 읽고 Claude로 쓰는** 경험을 해보시는 것을 추천합니다.
 
-👉 **실전 가이드: [[11_AI_Team_Operation_Guide|AI 팀 운영 가이드 (AI Team Operation Guide)]]** - AI 직원(페르소나) 정의 및 팀 운영 방법
+👉 **실전 가이드:**
+1. [[11_AI_Team_Operation_Guide|AI 팀 운영 가이드 (AI Team Operation Guide)]] - AI 직원(페르소나) 정의 및 팀 운영 방법
+2. [[12_Antigravity_Multi_Agent_Strategy|Antigravity Multi-Agent Strategy]] - Claude/Gemini/Antigravity 최적 조합 및 비용 절감 전략
+
 
 
 **다음 단계로, `llm` CLI를 설치하고 API 키를 등록하여 파이프라인을 구축하는 명령어를 정리해 드릴까요?**
