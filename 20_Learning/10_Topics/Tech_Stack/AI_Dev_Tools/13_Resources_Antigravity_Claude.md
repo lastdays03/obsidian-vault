@@ -35,3 +35,11 @@ Up: [[12_Antigravity_Multi_Agent_Strategy]]
 | **Video** | YouTube  | **Adding App Auth (Antigravity + Claude)**<br>Gemini가 기획하고 Claude가 인증 로직을 짜는 하이브리드 워크플로우 데모.     | [Watch Video](https://www.youtube.com/watch?v=yMJcHcCbgi4)                 |
 | **Video** | YouTube  | **Antigravity + Claude Code Is INSANE!**<br>파일 공유와 토큰 최적화 팁이 포함된 심화 가이드.                              | [Watch Video](https://www.youtube.com/watch?v=-lByERj69UQ)                 |
 | **Hack**  | GitHub   | **antigravity-claude-proxy**<br>Antigravity의 내부 모델을 Anthropic API처럼 속여서 Claude Code가 쓰게 만드는 프록시 도구. | [GitHub Repo](https://github.com/badrisnarayanan/antigravity-claude-proxy) |
+
+---
+
+## 🇰🇷 Korean Community Resources (Vibecoding)
+- **블로그**: [클로드 코드 10분컷 - 기초 사용법과 활용팁](https://codegear.tistory.com/146)
+- **재생목록**: [혼자 공부하는 바이브 코딩 with 클로드 코드](https://www.youtube.com/playlist?list=PLVsNizTWUw7HQ7avxRw301eget4G3sbjw)
+- **GitHub**: [혼자 공부하는 바이브코딩 with 클로드코드](https://github.com/taehojo/vibecoding)
+- **별책부록**: [[혼자-공부하는-바이브-코딩-with-클로드-코드_별책부록.pdf]]

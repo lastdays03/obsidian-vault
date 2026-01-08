@@ -15,6 +15,7 @@
 
 ### 1. 방법론 (Methodology)
 - [[00_Antigravity_Skills_Guide|스킬 가이드 (메인)]]: 안티그래비티 시스템 전체 개요
+- [[00_Antigravity_Universal_Proxy_Guide|유니버설 프록시 (병행)]]: Claude Code 자산을 Antigravity에서 사용하는 방법
 - [[03_Claude_Skills_Methodology|Claude 스킬 방법론]]: AI와의 협업 원칙
 - [[07_Knowledge_Combo|지식 콤보]]: 지식 관리 워크플로우 조합
 - [[06_Lifecycle_Combo|라이프사이클 콤보]]: 프로젝트 생애주기 관리

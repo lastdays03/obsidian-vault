@@ -10,9 +10,9 @@ Up: [[Learning_MOC]]
 ## 🔑 Languages & Frameworks
 - [[Python_MOC|Python]]: 인공지능 및 백엔드 주력 언어
 - [[Obsidian_MOC|Obsidian]]: 지식 관리 도구
-- [[Antigravity_MOC|Antigravity]]: AI 에이전트 워크플로우
-- [[Claude_Code_MOC|Claude Code]]: 차세대 AI 코딩 에이전트 (CLI)
 - [[AI_Dev_Tools_MOC|AI Dev Tools]]: AI 코딩 및 오케스트레이션 도구
+    - [[Claude_Code_MOC|Claude Code]]
+    - [[Antigravity_MOC|Antigravity]]
 
 
 ## 🔑 Infrastructure & Database

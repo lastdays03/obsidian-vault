@@ -9,6 +9,14 @@ Up: [[Tech_Stack_MOC]]
 
 ## 📚 핵심 모듈 (Modules)
 
+### 0. [[Claude_Code_Handbook|The Ultimate Handbook]]
+- User-Verified Features (Terminal, Patching, MCP)
+- Power User Features (Headless, piping, Custom Commands)
+
+### 0. Framework & Setup
+- [[AI_Dev_Tools/Agentic_Orchestration|Agentic Orchestration]]: The theoretical framework. (Advanced)
+- [[Claude_Code_Setup_Guide]]: The practical configuration guide (.claude config, standards).
+
 ### 1. [[01_CLI_Foundation|CLI Foundation (기반 환경)]]
 - Apple Silicon 최적화 및 설치
 - React-in-Terminal 아키텍처 이해
