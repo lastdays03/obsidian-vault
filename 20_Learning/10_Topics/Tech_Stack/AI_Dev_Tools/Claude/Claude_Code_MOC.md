@@ -14,7 +14,7 @@ Up: [[Tech_Stack_MOC]]
 - Power User Features (Headless, piping, Custom Commands)
 
 ### 0. Framework & Setup
-- [[AI_Dev_Tools/Agentic_Orchestration|Agentic Orchestration]]: The theoretical framework. (Advanced)
+- [[00_Agentic_Orchestration|Agentic Orchestration]]: The theoretical framework. (Advanced)
 - [[Claude_Code_Setup_Guide]]: The practical configuration guide (.claude config, standards).
 
 ### 1. [[01_CLI_Foundation|CLI Foundation (기반 환경)]]
