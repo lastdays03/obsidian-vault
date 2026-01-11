@@ -42,9 +42,12 @@ Antigravity 에이전트가 단독으로 작동하는 것이 아니라, 이미 �
 │   ├── dba.md         # "당신은 수석 DBA입니다..."
 │   └── qa.md          # "당신은 냉소적인 테스터입니다..."
 ├── skills/            # [지식/SOP 정의]
-│   ├── db-migration.md
-│   ├── api-review.md
-│   └── security-scan.md
+│   ├── db-migration/  # <--- 폴더 단위 관리
+│   │   └── SKILL.md   # 실제 본문
+│   ├── api-review/
+│   │   └── SKILL.md
+│   └── security-scan/
+│       └── SKILL.md   # 실제 본문
 └── commands/          # [명령어 명세]
     ├── release-flow.md
     └── deep-refactor.md
@@ -60,7 +63,7 @@ Antigravity 에이전트가 단독으로 작동하는 것이 아니라, 이미 �
 - 파괴적인 작업(DROP, TRUNCATE) 전에는 반드시 사용자 승인을 받으십시오.
 ```
 
-**`.claude/skills/db-migration.md` (스킬 SOP)**
+**`.claude/skills/db-migration/SKILL.md` (스킬 SOP)**
 ```markdown
 # 스킬: DB 마이그레이션 절차
 1. 현재 스키마 백업 확인.
@@ -88,13 +91,23 @@ Antigravity 워크플로우 폴더(`.agent/workflows/`)에 위치하며, 실제 
 - **Action:** `read_file .claude/agents/{AGENT_NAME}.md`
 - **Context:** 이 파일의 내용을 당신의 정체성으로 받아들이십시오.
 
-## 2. [DISCOVERY] 스킬 동적 탐색 (Dynamic Skill Discovery)
-당신이 사용할 수 있는 도구와 지식(Skills)이 무엇인지 **반드시** 확인해야 합니다. 하드코딩된 목록에 의존하지 마십시오.
-- **Action:** `list_dir .claude/skills/`
+## 2. [DISCOVERY] 지능형 스킬 탐색 (Smart Metadata Scan)
+단순한 폴더 목록 확인을 넘어, 각 스킬의 **핵심 설명(Description)**을 함께 스캔하여 오판 가능성을 차단하십시오.
+- **Action:** `grep -r "^description:" .claude/skills/`
 - **Reasoning:** 
-  1. 위 디렉토리의 파일 목록을 확인하십시오.
-  2. 사용자의 현재 요청(Task)을 해결하는 데 가장 적합한 스킬 파일(예: `.md`)이 무엇인지 판단하십시오.
-  3. 선택된 스킬 파일의 내용을 읽으십시오 (`read_file`).
+  1. 위 명령은 모든 스킬의 `description` 메타데이터를 **한 줄 요약**으로 출력합니다. (e.g. `path/to/SKILL.md:description: ...`)
+  2. 스킬의 **이름(Folder)**과 **의도(Description)**를 종합적으로 판단하여 Task에 가장 적합한 스킬을 선택하십시오.
+  3. 선택된 스킬의 본문을 읽으십시오 (`read_file`).
+
+> **💡 Context Optimization (The Menu Pattern)**
+> 이 "메타데이터 스캔" 방식은 식당의 **메뉴판(Menu)**과 같습니다.
+> - **Prerequisite**: 모든 `SKILL.md`는 반드시 YAML Frontmatter에 `description` 필드를 가져야 합니다.
+>
+> **💡 Ultimate Optimization (The Manifest Pattern)**
+> 만약 구조를 바꿀 수 없고 스킬이 너무 많다면, **"매니페스트 파일(Manifest File)"**을 운용하십시오.
+> 1.  **생성**: `.claude/skills/_manifest.md` 파일을 만들고, 모든 스킬의 이름과 설명을 표로 정리해 둡니다. (자동화 스크립트로 관리 권장)
+> 2.  **탐색**: 에이전트는 폴더를 뒤지는 대신, 이 **단 하나의 파일**만 읽고(`read_file _manifest.md`) 필요한 스킬을 결정합니다.
+> 3.  **효율**: 100개의 스킬을 스캔하는 IO 비용이 `1 File Read`로 압축됩니다. 가장 토큰 친화적인 방식입니다.
 
 ## 3. [EXECUTION] 작업 실행 (Execute Task)
 로드된 페르소나의 관점과, 탐색된 스킬의 절차(SOP)를 결합하여 사용자의 요청을 수행하십시오.
@@ -139,18 +152,38 @@ sequenceDiagram
     FS-->>Agent: Persona Context Loaded
     
     Wrapper->>FS: 2. Discover Skills (ls .claude/skills/)
-    FS-->>Wrapper: [api-review.md, db-migration.md, security.md]
+    FS-->>Wrapper: [api-review/, db-migration/, security/]
     
-    Wrapper->>Wrapper: Reasoning ("I need db-migration.md")
-    Wrapper->>FS: Read db-migration.md
+    Wrapper->>Wrapper: Reasoning ("I need db-migration/SKILL.md")
+    Wrapper->>FS: Read .claude/skills/db-migration/SKILL.md
     FS-->>Agent: Skill SOP Loaded
     
     Agent->>Agent: 3. Execute with Persona + Skill
     Agent-->>User: Done
 ```
 
-### 4.2 이점 (The Advantage)
-만약 새로운 스킬(`optimize-query.md`)을 `.claude/skills/` 폴더에 추가하면, 에이전트 래퍼(`agent-dba.md`)를 **전혀 수정하지 않아도** DBA 에이전트가 "탐색(Discover)" 단계에서 이 파일을 발견하고 즉시 사용할 수 있게 됩니다. 이것이 바로 **동적 디스패치(Dynamic Dispatch)**의 힘입니다.
+### 4.3 Trade-off Analysis: Native vs Proxy
+
+이 프록시 아키텍처는 **"대규모 스킬셋"**을 관리할 때 빛을 발합니다.
+
+| 비교 항목        | Claude Code (Native)                         | Antigravity (Proxy)                             |
+| :--------------- | :------------------------------------------- | :---------------------------------------------- |
+| **Context Load** | **High** (모든 스킬 정의가 상주함)           | **Zero** (필요할 때만 로드함)                   |
+| **Latency**      | **Low** (즉시 호출 가능)                     | **Medium** (`grep` 실행 시간 필요)              |
+| **Scalability**  | **Limited** (스킬이 50개 넘어가면 토큰 압박) | **Infinite** (스킬이 1000개여도 디스크 검색)    |
+| **Use Case**     | 자주 쓰는 핵심 스킬 (Hot Path)               | 가끔 쓰는 방대한 스킬 라이브러리 (Cold Storage) |
+
+> **💡 전략적 제언**:
+> 자주 쓰는 스킬(예: `git-commit`, `review`)은 에이전트의 **시스템 프롬프트에 하드코딩**하여 Native처럼 쓰고, 가끔 쓰는 스킬(예: `db-migration`, `k8s-deploy`)만 이 **프록시 패턴**으로 관리하는 하이브리드 방식을 권장합니다.
+
+### 4.4 대규모 운용 시 주의사항 (Scale Considerations)
+공식 문서 분석 결과, Claude Code는 **50개 이상의 스킬**을 운용할 때 성능 저하(활성화 실패, 토큰 낭비)가 발생합니다.
+
+**✅ 권장 전략 (Best Practice)**
+가장 좋은 해법은 복잡한 기술적 우회로(Proxy)를 찾는 것이 아니라, **"과도한 스킬 사용을 피하는 것"**입니다.
+1.  **수량 제한**: 스킬을 **10~30개** 내외의 핵심(Core) 세트로 유지하십시오.
+2.  **통합(Merge)**: 유사한 스킬들은 하나의 파일로 통합하여 관리 복잡도를 낮추십시오.
+3.  **최후의 수단**: 수백 개의 스킬이 *반드시* 필요한 특수 상황에서만 이 **Antigravity Proxy(파일 시스템 탐색)** 패턴을 'Cold Storage' 용도로 사용하십시오.
 
 ---
 
