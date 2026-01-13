@@ -16,4 +16,5 @@ Up: [[Tech_Stack_MOC]]
 - [[10_AI_CLI_Orchestration|AI CLI Orchestration]]: 여러 모델(Claude, Gemini, Copilot)을 CLI에서 조합하여 사용하는 방법론.
 - [[11_AI_Team_Operation_Guide|AI Team Operation Guide]]: AI 직원(페르소나) 정의 및 협업 워크플로우 가이드.
 - [[12_Antigravity_Multi_Agent_Strategy|Antigravity Multi-Agent Strategy]]: Claude와 Gemini를 Antigravity 환경에서 비용 효율적으로 운영하는 전략.
+- [[RAG_LLM_Setup_Guide_M1_Max]]: M1 Max 64GB 환경을 위한 Local RAG 구축 및 최적화 가이드.
 
