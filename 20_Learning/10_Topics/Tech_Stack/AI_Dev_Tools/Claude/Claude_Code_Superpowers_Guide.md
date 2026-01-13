@@ -134,3 +134,4 @@ graph TD
 **See Also**:
 - [[Claude_Code_Handbook]]: 클로드 코드 기본 사용법
 - [[Claude_Plugin_Registry]]: 다른 추천 플러그인 목록
+- [[Claude_Superpowers_Analysis]]: 컨텍스트 엔지니어링 관점 심층 분석

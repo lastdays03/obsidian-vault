@@ -41,6 +41,10 @@ Up: [[Tech_Stack_MOC]]
 - DevContainers를 이용한 Docker 샌드박싱
 - Agentic TDD (Test-Driven Development) 프로토콜
 
+### 6. Extensions (Plugins)
+- [[Claude_Plugin_Registry|Plugin Registry]]: 필수 플러그인 큐레이션
+- [[Claude_Code_Superpowers_Guide|Superpowers Guide]]: TDD & Workflow 확장팩 가이드
+
 ---
 
 ## 🔗 관련 리소스
