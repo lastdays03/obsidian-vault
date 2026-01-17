@@ -18,3 +18,7 @@ Up: [[Tech_Stack_MOC]]
 - [[12_Antigravity_Multi_Agent_Strategy|Antigravity Multi-Agent Strategy]]: Claude와 Gemini를 Antigravity 환경에서 비용 효율적으로 운영하는 전략.
 - [[RAG_LLM_Setup_Guide_M1_Max]]: M1 Max 64GB 환경을 위한 Local RAG 구축 및 최적화 가이드.
 
+
+## 🛠️ Automation & Integration
+- [[n8n_Automation_Use_Cases_2026|n8n Automation]]: 2026년 기준 AI Node 활용 실무 자동화 가이드 (Top 10 Use Cases).
+- [[n8n_Developer_Automation_2026|n8n for Developers]]: 개발자/DevOps를 위한 고효율 자동화 패턴 (GitHub, Sentry, Review).
