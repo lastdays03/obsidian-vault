@@ -19,6 +19,12 @@ Up: [[Tech_Stack_MOC]]
 - [[RAG_LLM_Setup_Guide_M1_Max]]: M1 Max 64GB 환경을 위한 Local RAG 구축 및 최적화 가이드.
 
 
+## 🔌 Components & Tools
+- [[00_MCP_Docker_Deployment_Strategy|MCP_Docker_Deployment_Strategy]]: 2026년 기준 MCP 서버의 Docker 배포 vs Local(npx) 실행 비교 및 가이드.
+- [[MCP_Filesystem_Server]]: Claude Desktop의 로컬 파일 시스템 접근을 위한 MCP 서버 구현체.
+- [[MCP_GitHub_Server]]: GitHub 저장소 연동 및 이슈/PR 관리를 위한 공식 MCP 서버.
+- [[MCP_Tavily_Server]]: AI 에이전트에 최적화된 실시간 웹 검색 및 콘텐츠 추출을 위한 필수 MCP.
+
 ## 🛠️ Automation & Integration
 - [[n8n_Automation_Use_Cases_2026|n8n Automation]]: 2026년 기준 AI Node 활용 실무 자동화 가이드 (Top 10 Use Cases).
 - [[n8n_Developer_Automation_2026|n8n for Developers]]: 개발자/DevOps를 위한 고효율 자동화 패턴 (GitHub, Sentry, Review).
