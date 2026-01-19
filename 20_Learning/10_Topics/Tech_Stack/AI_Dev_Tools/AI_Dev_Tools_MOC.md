@@ -24,6 +24,7 @@ Up: [[Tech_Stack_MOC]]
 - [[MCP_Filesystem_Server]]: Claude Desktop의 로컬 파일 시스템 접근을 위한 MCP 서버 구현체.
 - [[MCP_GitHub_Server]]: GitHub 저장소 연동 및 이슈/PR 관리를 위한 공식 MCP 서버.
 - [[MCP_Tavily_Server]]: AI 에이전트에 최적화된 실시간 웹 검색 및 콘텐츠 추출을 위한 필수 MCP.
+- [[MCP_Notion_Server]]: Notion 공식 Hosted MCP. 워크스페이스 실시간 연동 (읽기/쓰기) 및 Markdown 최적화 지원.
 
 ## 🛠️ Automation & Integration
 - [[n8n_Automation_Use_Cases_2026|n8n Automation]]: 2026년 기준 AI Node 활용 실무 자동화 가이드 (Top 10 Use Cases).
