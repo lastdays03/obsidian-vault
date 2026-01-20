@@ -21,4 +21,4 @@ Up: [[Learning_MOC]]
 - [[Database_MOC|Database]]: 데이터 저장소 기술 (MongoDB 등)
 
 ## 💡 Key Insights
-- **T-Shaped Skills**: 하나의 주력 언어(Python)를 깊게 파고들면서도, 주변 기술(DB, Tool)을 넓게 아는 T자형 인재를 지향합니다.
+- **[[T_Shaped_Skills]]**: 하나의 주력 언어(Python)를 깊게 파고들면서도, 주변 기술(DB, Tool)을 넓게 아는 T자형 인재를 지향합니다.
