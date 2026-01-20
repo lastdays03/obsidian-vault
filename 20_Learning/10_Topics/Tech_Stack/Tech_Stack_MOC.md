@@ -14,6 +14,9 @@ Up: [[Learning_MOC]]
     - [[Claude_Code_MOC|Claude Code]]
     - [[Antigravity_MOC|Antigravity]]
 
+## 🔑 API Development
+- [[Code_First_API_Strategy]]: Code-First(FastAPI) vs Contract-First(Generator) 비교 및 도입 전략 가이드.
+- [[OpenAPI_Generator]]: API 클라이언트/서버 코드 자동 생성 도구 (Concept).
 
 ## 🔑 Infrastructure & Database
 - [[Database_MOC|Database]]: 데이터 저장소 기술 (MongoDB 등)
