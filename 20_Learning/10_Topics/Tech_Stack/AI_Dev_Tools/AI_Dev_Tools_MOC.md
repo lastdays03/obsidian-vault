@@ -17,10 +17,12 @@ Up: [[Tech_Stack_MOC]]
 - [[11_AI_Team_Operation_Guide|AI Team Operation Guide]]: AI 직원(페르소나) 정의 및 협업 워크플로우 가이드.
 - [[12_Antigravity_Multi_Agent_Strategy|Antigravity Multi-Agent Strategy]]: Claude와 Gemini를 Antigravity 환경에서 비용 효율적으로 운영하는 전략.
 - [[RAG_LLM_Setup_Guide_M1_Max]]: M1 Max 64GB 환경을 위한 Local RAG 구축 및 최적화 가이드.
-
+- [[Claude_Code_Solopreneur_Agent_Architecture]]: 솔로프리너를 위한 Claude Code 기반 에이전트 아키텍처.
+- [[Claude_Code_Solopreneur_Setup_Guide]]: 솔로프리너 코딩 에이전트 환경 셋업 가이드.
 
 ## 🔌 Components & Tools
 - [[00_MCP_Docker_Deployment_Strategy|MCP_Docker_Deployment_Strategy]]: 2026년 기준 MCP 서버의 Docker 배포 vs Local(npx) 실행 비교 및 가이드.
+- [[Vercel_Agent_Skills]]: Vercel Labs의 에이전트 스킬 목록 및 활용.
 - [[MCP_Filesystem_Server]]: Claude Desktop의 로컬 파일 시스템 접근을 위한 MCP 서버 구현체.
 - [[MCP_GitHub_Server]]: GitHub 저장소 연동 및 이슈/PR 관리를 위한 공식 MCP 서버.
 - [[MCP_Tavily_Server]]: AI 에이전트에 최적화된 실시간 웹 검색 및 콘텐츠 추출을 위한 필수 MCP.
