@@ -19,6 +19,8 @@ Up: [[Tech_Stack_MOC]]
 - [[RAG_LLM_Setup_Guide_M1_Max]]: M1 Max 64GB 환경을 위한 Local RAG 구축 및 최적화 가이드.
 - [[Claude_Code_Solopreneur_Agent_Architecture]]: 솔로프리너를 위한 Claude Code 기반 에이전트 아키텍처.
 - [[Claude_Code_Solopreneur_Setup_Guide]]: 솔로프리너 코딩 에이전트 환경 셋업 가이드.
+- [[13_Resources_Antigravity_Claude]]: Antigravity와 Claude Code 활용을 위한 큐레이션 리소스 및 커뮤니티 자료.
+- [[Free_LLM_API_Limits_2026]]: 2026년 기준 주요 무료 LLM API(Gemini, Groq 등)의 토큰 제한량 및 사용량 정리.
 
 ## 🔌 Components & Tools
 - [[00_MCP_Docker_Deployment_Strategy|MCP_Docker_Deployment_Strategy]]: 2026년 기준 MCP 서버의 Docker 배포 vs Local(npx) 실행 비교 및 가이드.
