@@ -44,6 +44,7 @@ Up: [[Tech_Stack_MOC]]
 ### 6. Extensions (Plugins)
 - [[Claude_Plugin_Registry|Plugin Registry]]: 필수 플러그인 큐레이션
 - [[Claude_Code_Superpowers_Guide|Superpowers Guide]]: TDD & Workflow 확장팩 가이드
+  - [[Claude_Superpowers_Analysis|Analysis: Context Engineering Perspective]]: Context Engineering 관점에서의 Superpowers 분석.
 
 ---
 

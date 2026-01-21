@@ -47,3 +47,7 @@
 
 ## 🧠 연결 그래프 (Graph View)
 *이 문서를 중심으로 '로컬 그래프'를 확인하세요.*
+
+---
+### 🔗 관련 프레임워크 (Related Frameworks)
+- [[FastAPI_MOC|FastAPI (패스트API)]]
