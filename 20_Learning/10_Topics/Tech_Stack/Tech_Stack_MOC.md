@@ -14,6 +14,10 @@ Up: [[Learning_MOC]]
     - [[Claude_Code_MOC|Claude Code]]
     - [[Antigravity_MOC|Antigravity]]
 
+## 🔑 Version Control
+- [[Git_GitHub_Guide_2026|Git + GitHub Guide]]: 2026년 기준 실전 가이드
+- [[GitHub_Advanced_Features_2026|GitHub Advanced Features]]: PR, Actions, Projects, Wiki, Worktree 심화 가이드
+
 ## 🔑 API Development
 - [[API_MOC|API Development]]: API 설계 전략(Code-First vs Contract-First) 및 도구(OpenAPI Generator) 가이드.
 
