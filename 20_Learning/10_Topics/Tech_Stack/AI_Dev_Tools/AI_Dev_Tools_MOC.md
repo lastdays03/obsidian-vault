@@ -36,4 +36,5 @@ Up: [[Tech_Stack_MOC]]
 - [[n8n_Automation_Use_Cases_2026|n8n Automation]]: 2026년 기준 AI Node 활용 실무 자동화 가이드 (Top 10 Use Cases).
 - [[n8n_Developer_Automation_2026|n8n for Developers]]: 개발자/DevOps를 위한 고효율 자동화 패턴 (GitHub, Sentry, Review).
 - [[n8n_YouTube_Search_Workflow]]: 키워드 기반 YouTube 영상 검색 및 목록화 n8n 워크플로우 JSON.
+- [[n8n/n8n_MCP_Integration_Guide|n8n MCP Integration Guide]]: n8n을 MCP 서버/클라이언트로 활용하여 AI 에이전트와 연동하는 완벽 가이드.
 - [[MCP_Context7_Server|Context7 MCP Server]]: 최신 라이브러리/API 문서를 실시간으로 검색하여 LLM에 제공하는 도구.
