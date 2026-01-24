@@ -19,6 +19,83 @@ updated: 2026-01-16
 
 ---
 
+## 0. Clean Migration (Critical)
+
+기존의 `pyenv`, `conda` 등이 섞여 있는 환경을 완전히 정리하고 `uv`로 깨끗하게 전환하는 방법입니다. (2026년 1월 기준 최신 방식)
+
+### 1단계. 기존 도구 완전 제거 (순서 중요!)
+
+**1. 쉘 설정에서 pyenv / conda 초기화 코드 제거**
+
+```bash
+# ~/.bashrc, ~/.zshrc, ~/.bash_profile, ~/.zprofile 등 열기
+nano ~/.zshrc    # 또는 vim / code 등
+
+# 아래와 비슷한 줄 전부 주석 처리하거나 삭제
+# export PATH="$HOME/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+# export PATH="$HOME/anaconda3/bin:$PATH"   # 또는 miniconda3
+# . "$HOME/anaconda3/etc/profile.d/conda.sh"
+# conda deactivate  # 등
+```
+
+→ 파일 저장 후 터미널 재시작 또는 `source ~/.zshrc` 실행.
+
+**2. pyenv 완전 삭제**
+
+```bash
+# pyenv 자체 제거 (설치된 python들도 같이 날아감)
+rm -rf ~/.pyenv
+
+# pyenv-virtualenv가 따로 있었다면
+rm -rf ~/.pyenv/plugins/pyenv-virtualenv
+```
+
+**3. Anaconda / Miniconda 완전 삭제**
+
+```bash
+# 가장 안전한 방법 (conda 자체가 제공하는 clean 방법)
+# conda가 아직 살아있다면 먼저 실행
+conda install anaconda-clean   # (안 되면 생략)
+anaconda-clean --yes
+
+# 본체 삭제 (설치 경로에 따라 선택)
+rm -rf ~/anaconda3
+rm -rf ~/miniconda3
+rm -rf ~/opt/anaconda3         # 일부 Mac 설치 경로
+rm -rf ~/opt/miniconda3
+
+# conda가 남긴 캐시 / 백업 등도 삭제 (선택)
+rm -rf ~/.conda
+rm -rf ~/.condarc
+rm -rf ~/.continuum
+```
+
+**4. pip 캐시 / uv 이전 캐시 정리 (선택적이지만 추천)**
+
+```bash
+rm -rf ~/.cache/pip
+rm -rf ~/.cache/uv
+rm -rf ~/.local/share/uv
+```
+
+**5. 쉘 재시작 & PATH 확인**
+
+```bash
+exec $SHELL -l          # 또는 새 터미널 열기
+
+which python            # /usr/bin/python 또는 시스템 python 나와야 함
+which pip               # /usr/bin/pip 또는 없어야 좋음
+python --version
+conda --version         # command not found 나와야 함
+pyenv --version         # command not found 나와야 함
+```
+
+여기까지 하면 이전 환경이 거의 깨끗이 지워진 상태입니다.
+
+---
+
 ## 1. Installation
 
 가장 추천하는 설치 방법 3가지입니다.
