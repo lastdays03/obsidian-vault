@@ -1,7 +1,7 @@
 # AI and Data MOC (AI & 데이터 지도)
 
 **상태**: #learning/map
-**상위 문서**: [[Learning_MOC]]
+**상위 문서**: [[10_Topics_MOC]]
 
 ---
 

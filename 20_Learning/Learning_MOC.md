@@ -30,17 +30,10 @@
 ## 🗂️ 학습 주제 (Study Topics)
 *현재 진행 중인 커리큘럼과 프로젝트화된 학습 경로입니다.*
 
-### 🤖 AI & Data Science
-- **[[AI_and_Data_MOC|AI and Data (인공지능과 데이터)]]**
-    - [[Machine_Learning_MOC|Machine Learning (머신러닝)]]
-    - [[Deep_Learning_MOC|Deep Learning (딥러닝)]]
-
-### 🛠️ Tech Stack (기술 스택)
-- **[[Tech_Stack_MOC|기술 스택 전체 보기]]**
-    - [[Python_MOC|Python (파이썬)]]
-    - [[Antigravity_MOC|Antigravity (안티그래비티)]]
-    - [[Obsidian_MOC|Obsidian (옵시디언)]]
-    - [[Database_MOC|Database (데이터베이스)]]
+### 📂 [[10_Topics_MOC|모든 토픽 보기 (10_Topics)]]
+- **[[Tech_Stack_MOC|Tech Stack (기술 스택)]]**: Frontend, Backend, Infra, AI Tools.
+- **[[AI_and_Data_MOC|AI and Data (인공지능과 데이터)]]**: ML, DL, Data Science.
+- **[[Concepts_MOC|Concepts (개념 및 비즈니스)]]**: SaaS, CS Concepts.
 
 ---
 
