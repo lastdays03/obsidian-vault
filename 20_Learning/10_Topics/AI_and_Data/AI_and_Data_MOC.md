@@ -16,6 +16,9 @@
 - CNN, RNN, Attention, RAG 등 심층 신경망과 최신 AI 기술을 다룹니다.
 - 강의 노트: 신경망 기초(Course 2 M2) 및 NLP/LLM(Course 2 M3)
 
+### 🛠️ AI Infrastructure & Cloud
+- [[RunPod]]: AI/ML 워크로드를 위한 클라우드 GPU 플랫폼.
+
 ---
 
 ## 🧠 연결 그래프 (Graph View)

@@ -39,9 +39,11 @@ Up: [[10_Topics_MOC]]
 - [[Vercel_MOC]]: Next.js 및 프론트엔드 최적화 클라우드 (AI Cloud)
 - [[Cloudflare_MOC]]: 글로벌 에지 네트워크 및 보안 플랫폼 (Workers, R2, AI)
 - [[Docker_MOC]]: 컨테이너화 표준 플랫폼 (DevOps & AI)
+- [[RunPod]]: AI/ML 워크로드를 위한 클라우드 GPU 플랫폼.
 
 ## 🔑 Cloud Concepts
 - [[SaaS_MOC]]: 서비스형 소프트웨어 모델 및 클라우드 유형(IaaS/PaaS) 비교
+- [[Serverless]]: 현대 애플리케이션의 핵심 아키텍처 패러다임
 
 ## 🔑 Database
 - [[Database_MOC|Database]]: 데이터 저장소 기술 (MongoDB 등)
