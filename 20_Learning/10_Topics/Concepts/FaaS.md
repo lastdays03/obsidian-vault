@@ -5,6 +5,7 @@ tags:
   - cloud_computing
   - serverless
   - faas
+Up: [[Concepts_MOC]]
 Source: User Prompt
 ---
 

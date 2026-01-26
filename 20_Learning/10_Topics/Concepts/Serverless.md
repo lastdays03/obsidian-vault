@@ -5,6 +5,7 @@ tags:
   - cloud_computing
   - serverless
   - architecture
+Up: [[Concepts_MOC]]
 Source: User Prompt
 ---
 

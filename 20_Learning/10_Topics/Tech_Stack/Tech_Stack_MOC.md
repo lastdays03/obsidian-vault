@@ -15,6 +15,10 @@ Up: [[10_Topics_MOC]]
 - [[AI_Dev_Tools_MOC|AI Dev Tools]]: AI 코딩 및 오케스트레이션 도구
     - [[Claude_Code_MOC|Claude Code]]
     - [[Antigravity_MOC|Antigravity]]
+    - [[OpenCode/OpenCode|OpenCode]]
+    - [[Gemini_CLI/Gemini_CLI|Gemini CLI]]
+    - [[Cursor/Cursor|Cursor]]
+    - [[NotebookLM/NotebookLM|NotebookLM]]
 
 ## 🔑 Version Control
 - [[Git_GitHub_Guide_2026|Git + GitHub Guide]]: 2026년 기준 실전 가이드
