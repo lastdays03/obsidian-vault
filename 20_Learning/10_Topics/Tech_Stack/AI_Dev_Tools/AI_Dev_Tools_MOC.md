@@ -10,6 +10,7 @@ Up: [[Tech_Stack_MOC]]
 ## 🔑 Core Platforms
 - [[Antigravity_MOC|Antigravity]]: The holistic Agentic Workflow framework.
 - [[Claude_Code_MOC|Claude Code]]: The Command Line Agent engine.
+- [[LangChain/LangChain|LangChain]]: LLM 앱 개발을 위한 표준 프레임워크 (Chains, Agents, Memory).
 - [[OpenCode/OpenCode|OpenCode]]: 100% 오픈소스 AI 코딩 에이전트.
 - [[Gemini_CLI/Gemini_CLI|Gemini CLI]]: Google 공식 오픈소스 AI 코딩 CLI.
 - [[Cursor/Cursor|Cursor]]: 차세대 AI 기반 코드 에디터 (VS Code기반).
@@ -18,6 +19,7 @@ Up: [[Tech_Stack_MOC]]
 - [[00_Agentic_Orchestration|Agentic Orchestration]]: The comprehensive theoretical framework for synthetic intelligence.
 - [[10_AI_CLI_Orchestration|AI CLI Orchestration]]: 여러 모델(Claude, Gemini, Copilot)을 CLI에서 조합하여 사용하는 방법론.
 - [[12_Antigravity_Multi_Agent_Strategy|Antigravity Multi-Agent Strategy]]: Claude와 Gemini를 Antigravity 환경에서 비용 효율적으로 운영하는 전략.
+- [[LangGraph/LangGraph|LangGraph]]: 순환(Cyclic) 워크플로우 및 상태 관리(State Management) 프레임워크.
 - [[13_Resources_Antigravity_Claude]]: Antigravity와 Claude Code 활용을 위한 큐레이션 리소스 및 커뮤니티 자료.
 
 ## 👨‍💻 Solopreneur & Operation
