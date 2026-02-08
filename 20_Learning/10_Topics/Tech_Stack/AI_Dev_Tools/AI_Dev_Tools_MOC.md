@@ -15,6 +15,9 @@ Up: [[Tech_Stack_MOC]]
 - [[Gemini_CLI/Gemini_CLI|Gemini CLI]]: Google 공식 오픈소스 AI 코딩 CLI.
 - [[Cursor/Cursor|Cursor]]: 차세대 AI 기반 코드 에디터 (VS Code기반).
 
+## 🎨 UI/Design Generation
+- [[Google_Stitch]]: Text-to-UI & Sketch-to-UI Generator (Gemini 2.5 Pro).
+
 ## 🗂️ Orchestration & Strategy
 - [[00_Agentic_Orchestration|Agentic Orchestration]]: The comprehensive theoretical framework for synthetic intelligence.
 - [[10_AI_CLI_Orchestration|AI CLI Orchestration]]: 여러 모델(Claude, Gemini, Copilot)을 CLI에서 조합하여 사용하는 방법론.
