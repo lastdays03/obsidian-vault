@@ -29,6 +29,9 @@ Up: [[10_Topics_MOC]]
 - [[Testing_MOC]]: 테스트 전략 (Vitest, Playwright).
 - [[CICD_MOC]]: 자동화 파이프라인 (GitHub Actions).
 
+## 🔑 Project Management
+- [[Project_Management_MOC|Project Management]]: 도구 및 방법론 (Linear 등)
+
 ## 🔑 API Development
 - [[API_MOC|API Development]]: API 설계 전략(Code-First vs Contract-First) 및 도구(OpenAPI Generator) 가이드.
 
