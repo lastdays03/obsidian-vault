@@ -1,52 +1,87 @@
-# 개념 (Concept): Google Stitch
+# 개념 (Concept): Google Stitch MCP
 
-**태그**: #knowledge/concept #topic/Tech_Stack/AI_Dev_Tools
-**출처**: [[Google_Stitch]]
+**태그**: #knowledge/concept #topic/Tech_Stack/AI_Dev_Tools #tool/ui-generator
+**출처**: User Input
 
 ---
 
 ## 📖 정의 (Definition)
-**Google Stitch**는 텍스트 프롬프트나 스케치를 입력하면 **UI 디자인과 실제 작동하는 프론트엔드 코드(React, Tailwind CSS 등)를 동시에 생성해주는 Google의 AI 도구**입니다.
-*2025년 5월 Google I/O에서 발표되었으며, 개발자와 디자이너 간의 협업 장벽을 허무는 것을 목표로 합니다.*
+**Google Stitch MCP**는 Google의 AI 디자인 도구인 'Stitch'를 Claude, Cursor, Gemini와 같은 AI 에이전트와 연결해주는 기술이다.
+**채팅만으로 UI 디자인을 생성하고, 이를 바로 코드로 변환**하여 프로젝트에 적용할 수 있게 해준다.
 
 ---
 
 ## 💡 예시 (Example)
-*(Text-to-UI 및 Sketch-to-UI)*
+*디자인 생성부터 코드 변환까지:*
+> 사용자: "여행 앱을 만들고 있어. 파스텔 톤의 **'호텔 예약 상세 화면'**을 디자인해줘."
+> (Stitch가 디자인 생성)
+> 사용자: "이 디자인을 **Tailwind CSS와 React 코드**로 변환해줘."
+> (Stitch MCP가 코드를 생성하여 파일로 저장)
 
-1.  **Text Input**: "커피 선물 거래를 위한 모바일 대시보드 만들어줘"
-    -> **Result**: 디자인 시안 + React/Tailwind 코드 생성.
-2.  **Sketch Input**: 화이트보드에 그린 와이어프레임 사진 업로드
-    -> **Result**: 실제 레이아웃이 적용된 웹페이지 코드로 변환.
+---
 
+## 🛠️ 핵심 기능 (Key Features)
+
+### 1. Design to Code (디자인 → 코드 직행)
+Figma나 별도 툴 없이, 채팅창에서 "로그인 화면 만들어줘"라고 하면 디자인 시안과 코드를 동시에 생성한다.
+
+### 2. Design DNA (스타일 상속)
+기존 프로젝트의 색상, 폰트, 레이아웃 스타일(Design DNA)을 AI가 인식하여, 이질감 없는 새로운 페이지를 추가할 수 있다.
+
+### 3. No Context Switching
+디자인 툴과 에디터를 오갈 필요 없이 개발 환경(IDE) 안에서 디자인과 퍼블리싱을 끝낼 수 있다.
+
+---
+
+## 🚀 설치 및 설정 (Setup Step-by-Step)
+
+### 준비물
+- Node.js (v18 이상)
+- Google Cloud CLI (gcloud)
+- MCP Client (Claude Desktop, Cursor 등)
+
+### Step 1: 자동 설치 (추천)
+터미널에서 아래 명령어 실행 (GCP 프로젝트 설정, 인증, 권한 부여 자동 수행):
 ```bash
-# Workflow Example
-1. Idea sketching on paper -> Photo upload to Stitch
-2. Stitch generates UI & React Code
-3. Export code to Project (e.g., 'ACE' frontend)
-4. Refine in IDE
+npx @_davideast/stitch-mcp init
+```
+
+### Step 2: 클라이언트 연결 (Claude Desktop 예시)
+`claude_desktop_config.json`에 설정 추가:
+```json
+{
+  "mcpServers": {
+    "stitch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@_davideast/stitch-mcp"
+      ],
+      "env": {
+        "GOOGLE_CLOUD_PROJECT": "생성된-프로젝트-ID" 
+      }
+    }
+  }
+}
 ```
 
 ---
 
 ## ⚖️ 비교 (Comparison)
-| Feature | Google Stitch | v0.dev (Vercel) | Galileo AI | Figma (Original) |
-| :--- | :--- | :--- | :--- | :--- |
-| **Core Function** | Text/Sketch to **Code & Design** | Text to Code (React/Shadcn) | Text to UI Design (Figma) | Vector Design Tool |
-| **Input** | Text, **Images (Sketch)** | Text, Images | Text | Manual Drawing |
-| **Output** | React, HTML, Tailwind | React, HTML, Vue | Figma Editable File | Design File |
-| **Strengths** | **Multimodal (Sketch)**, Google Ecosystem | Vercel Integration, Shadcn UI | High quality Design assets | Industry Standard for Design |
+| Feature   | Google Stitch MCP               | v0.dev (Vercel)      | Galileo AI           |
+| :-------- | :------------------------------ | :------------------- | :------------------- |
+| **핵심**  | AI 에이전트(Claude/Cursor) 연동 | 웹 기반 생성 도구    | Figma 플러그인       |
+| **Code**  | IDE 내 직접 파일 생성           | 복사/붙여넣기 필요   | Figma 디자인 생성    |
+| **Style** | 기존 프로젝트 DNA 상속          | Shadcn/Tailwind 기반 | 텍스트 프롬프트 의존 |
 
 ---
 
 ## 🔑 Key Insights
-- **Gemini 2.5 Pro & Flash 기반**: Google의 최신 멀티모달 모델을 사용하여 이미지 인식(스케치)과 코드 생성 능력이 뛰어납니다.
-- **솔로프리너를 위한 가속기**: 백엔드(FastAPI 등)는 직접 개발하되, 프론트엔드 UI/UX는 Stitch로 빠르게 초안을 잡아 개발 속도를 획기적으로 단축할 수 있습니다.
-- **Figma 연동**: 단순 코드만 생성하는 것이 아니라, 디자인을 Figma로 내보내 디자이너가 추가 작업을 할 수 있도록 지원합니다.
+- **Agentic Workflow**: 단순히 코드를 짜주는 것을 넘어, '기획(텍스트) → 디자인(Stitch) → 퍼블리싱(Code)'의 전체 흐름을 에이전트 하나로 통합한다.
+- **Design DNA**: 기존 프로젝트의 스타일을 분석하고 유지하는 능력 덕분에, 뜬금없는 디자인이 아닌 '우리 앱 같은' 페이지를 만들어준다.
+- **1인 개발 최적화**: 디자이너와 퍼블리셔가 없는 1인 개발자나 빠른 프로토타이핑이 필요한 팀에게 강력하다.
 
-> [!NOTE] 동명이인 서비스: Google Cloud Video Stitcher API
-> 동영상 스트리밍 서버 사이드 광고 삽입(SSAI) API로, UI 도구인 Google Stitch와는 전혀 다른 서비스입니다.
+---
 
 ## 📚 References
-- [Google I/O 2025 Keynote](https://io.google/2025)
-- [Google Labs](https://labs.google)
+- [Google Stitch MCP Package](https://www.npmjs.com/package/@_davideast/stitch-mcp)
