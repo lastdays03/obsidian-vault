@@ -24,6 +24,9 @@ Up: [[10_Topics_MOC]]
 - [[Git_GitHub_Guide_2026|Git + GitHub Guide]]: 2026년 기준 실전 가이드
 - [[GitHub_Advanced_Features_2026|GitHub Advanced Features]]: PR, Actions, Projects, Wiki, Worktree 심화 가이드
 
+## 🔑 Development Tools
+- [[Dev_Tools/tmux|tmux]]: Terminal Multiplexer (서버 작업 필수 도구)
+
 ## 🔑 Development Process
 - [[Agile]]: 개발 방법론.
 - [[Testing_MOC]]: 테스트 전략 (Vitest, Playwright).
