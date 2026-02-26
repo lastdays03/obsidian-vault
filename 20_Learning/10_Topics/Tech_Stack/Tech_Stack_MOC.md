@@ -46,6 +46,7 @@ Up: [[10_Topics_MOC]]
 - [[Firebase_MOC]]: Google의 서버리스 백엔드 플랫폼 (NoSQL, Mobile First)
 
 ## 🔑 Infrastructure & Deployment
+- [[OCI_code-server|Oracle Cloud Infrastructure (VS Code Server)]]: 브라우저 기반 클라우드 개발 환경 (A1 ARM)
 - [[Vercel_MOC]]: Next.js 및 프론트엔드 최적화 클라우드 (AI Cloud)
 - [[Cloudflare_MOC]]: 글로벌 에지 네트워크 및 보안 플랫폼 (Workers, R2, AI)
 - [[Docker_MOC]]: 컨테이너화 표준 플랫폼 (DevOps & AI)
